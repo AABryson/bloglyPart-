@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<h2>Edit a user</h2>
+    <form method="POST" action="/submit_form/edit/{{id}}">
+        id = {{id}}
+        <h3>First Name</h3>
+        <input type=text name="first">
+        <h3>Last Name</h3>
+        <input type=text name="last">
+        <h3>Image</h3>
+        <input type=text name="picture">
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
